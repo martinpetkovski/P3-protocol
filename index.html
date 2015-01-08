@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Протокол на преговарачки процес</title>
+        <script src="jquery.js"></script>
+        <script src="jqueryui.js"></script>
+        <script src="main.js"></script>
+        <link href="main.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="title">Протокол на преговарачки процес</div>
+        <form>
+            <div class="header">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" class="txtImeV" placeholder="ID на анализатор" />
+                        </td>
+                        <td>
+                            <input type="text" class="txtImeA" placeholder="ID на преговарач А" />
+                        </td>
+                        
+                        <td>
+                            <input type="text" class="txtImeB" placeholder="ID на преговарач Б"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="txtPredmet" placeholder="Предмет" /></td>
+                        <td><input type="text" class="txtSredba" placeholder="Средба" /></td>
+                        <td><input type="text" class="txtBroj" placeholder="Број" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="txtVreme" placeholder="Време" /></td>
+                        <td><input type="text" class="txtMesto" placeholder="Место" /></td>
+                        <td><input type="text" class="txtFazi" placeholder="Фази" /></td>
+                    </tr>
+                    <tr>
+                        <td></td><td><button class="pochetok" type="button">Почеток</button></td><td></td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="timer"></div>
+            
+            <div class="fazi">
+                <div class="fazaNaslov"><div class="fazaNaslov">Моментална фаза</div> <div class="ent"></div></div>
+                <button type="button">Р Р</button><br>
+                <button type="button">П</button><br>
+                <button type="button">И</button><br>
+                <button type="button">ПП</button><br>
+                <button type="button">ПС</button><br>
+            </div>
+            
+            <div class="wrapper">
+                <table class="process">
+                    <tr class="participants">
+                        <td colspan="5" class="participantA">A</td>
+                        <td colspan="5" class="participantB">Б</td>
+                    </tr>
+                    
+                    <tr class="phases">
+                        <td class="element">А</td>
+                        <td class="element">Е</td>
+                        <td class="element">И</td>
+                        <td class="element">О</td>
+                        <td class="element">У</td>
+                        <td class="element">А</td>
+                        <td class="element">Е</td>
+                        <td class="element">И</td>
+                        <td class="element">О</td>
+                        <td class="element">У</td>
+                    </tr>
+                    
+                    <tr class="radioButtons" id="row1">
+                        <td><input type="radio" name="row1participant1" class="p1" id="1" /></td>
+                        <td><input type="radio" name="row1participant1" class="p1" id="1" /></td>
+                        <td><input type="radio" name="row1participant1" class="p1" id="1" /></td>
+                        <td><input type="radio" name="row1participant1" class="p1" id="1" /></td>
+                        <td><input type="radio" name="row1participant1" class="p1" id="1" /></td>
+                        <td><input type="radio" name="row1participant2" class="p2" id="1" /></td>
+                        <td><input type="radio" name="row1participant2" class="p2" id="1" /></td>
+                        <td><input type="radio" name="row1participant2" class="p2" id="1" /></td>
+                        <td><input type="radio" name="row1participant2" class="p2" id="1" /></td>
+                        <td><input type="radio" name="row1participant2" class="p2" id="1" /></td>
+                    </tr>
+
+                    <tr><td colspan="10"><button type="button" class="finish">Внес</button></td></tr>
+                </table>
+            </div>
+            
+        </form>
+        
+        <div class="izvestaj"></div>
+    </body>
+</html>

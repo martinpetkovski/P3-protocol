@@ -1,0 +1,92 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu&subset=latin,cyrillic);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    width: 55%;
+    text-align: center;
+    font-family: Ubuntu, monospace;
+}
+
+input {
+    padding:5px;
+    font-size:16px;
+    margin:4px 0px;
+}
+
+.title {
+    font-size:28px;
+    padding:20px;
+}
+
+table {
+    width:100%;
+}
+
+.wrapper {
+    display: none;
+}
+
+.participants {
+    font-size:60px;
+}
+
+.phases td {
+    background-color: #EEE;
+    border-bottom: solid thin #000;
+    font-size:22px;
+}
+
+.radioButtons td {
+    background-color: #FAFAFA;
+}
+
+.phases td:nth-child(5), .radioButtons td:nth-child(5) {
+    border-right:4px solid #C00;
+}
+
+.timer {
+    position: fixed;
+    right:40px;
+    top:30px;
+}
+
+.fazi {
+    display:none;
+    position: fixed;
+    top: 75px;
+    right: 40px;
+}
+
+.fazi button {
+    width:80px;
+    height:30px
+}
+
+.header table input {
+    width:90%;
+}
+
+.fazaNaslov .ent {
+    font-size:42px;
+    height:50px;
+}
+
+button {
+    background-color:#069;
+    color:#FFF;
+    padding:4px 16px;
+    border: solid 2px #036;
+    margin: 3px 0px;
+    border-radius:4px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #09C;
+    border-color: #069;
+}
